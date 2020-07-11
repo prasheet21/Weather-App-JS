@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Details"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/btnSection">
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/ic_arrow_upwards"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/BookImage"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add To Favroite"
+            android:layout_toRightOf="@+id/BookImage"
+            android:layout_centerVertical="true"
+            android:id="@+id/AddingFavroite"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add To Currently Reading"
+            android:layout_toRightOf="@+id/BookImage"
+            android:layout_below="@+id/AddingFavroite"
+            android:id="@+id/CurrRead"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already Read"
+            android:layout_toRightOf="@+id/BookImage"
+            android:layout_below="@+id/CurrRead"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="false"
+            android:id="@+id/alRead"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSection"
+        android:paddingLeft="14dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:text="Book Name"
+            android:textStyle="bold|italic"
+            android:textSize="19dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/bookName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Author Name"
+            android:layout_below="@+id/bookName"
+            android:layout_marginTop="13dp"
+            android:id="@+id/authName"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pages"
+            android:layout_below="@+id/authName"
+            android:layout_marginTop="13dp"
+            android:id="@+id/pages"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description - "
+            android:layout_below="@+id/pages"
+            android:textStyle="italic"
+            android:layout_marginTop="13dp"
+            android:textSize="15dp"
+            android:id="@+id/DisText"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/DisText"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+</ScrollView>
