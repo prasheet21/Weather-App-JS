@@ -1,0 +1,161 @@
+body{
+    background-image : url("background.jpg") ;
+    background-position: center;
+    background-size: cover;
+}
+
+*{
+    margin:0px ;
+    padding:0px ;
+}
+#header{
+    background-color:rgba(0 , 0 , 0 , 0.7) ;
+    color : rgba(255 , 255 , 255 , 0.8) ;
+    margin:20px auto ;
+    padding : 20px ;
+    text-align: center;
+}
+
+#main-container{
+    margin-top:35px ;
+}
+
+.add-task input{
+    outline:none ;
+    border:none ;
+    border-radius: 10px ;
+}
+
+.add-task input[type="text"]{
+    box-shadow: 1px 1px 5px 1px black ;
+    color:goldenrod ;
+    background-color:rgba(23, 53, 112, .6) ;
+    font-weight: bold;
+    width : 40% ;
+    padding:15px 10px;
+    font-size: larger;
+}
+.add-task input[type="submit"]{
+    box-shadow: 1px 1px 5px 1px grey ;
+    padding:15px 22px ;
+    font-size: larger;
+    margin-left: -1px;
+    color:white ;
+    background-color : black ;
+}
+.add-task input[type="submit"]:hover{
+    cursor: pointer;
+}
+
+.add-task{
+    text-align: center;
+}
+
+.list-head{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    margin-bottom: 13px;
+}
+.list-head *{
+    margin-left: 10px ;
+}
+.list-body{
+    margin-top:0px ;
+    padding:20px ;
+    box-sizing: border-box;
+    width:50% ;
+    margin: auto;
+    color:white ;
+    height: 57vh;
+    overflow-y: auto;
+}
+.list-body i{
+    margin-right: 8px;
+}
+.list-body li{
+    display: flex;
+    margin-bottom: 6px ;
+    padding: 15px 10px;
+    background-color: black;
+    list-style: none;
+    font-size: 20px;
+    
+}
+.btns{
+    display: flex;
+    justify-content: space-around;
+    width:18% ;
+    margin-left:auto;
+}
+.btns *:hover{
+    cursor: pointer;
+}
+.fa-check{
+    color:green ;
+}
+.fa-trash-alt{
+    color:red ;
+}
+
+footer{
+    background-color:black ;
+    color:white ;
+    padding:5px  ;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100% ;
+}
+
+
+@media (max-width:1173px){
+    .list-body{
+        width:70% ;
+    }
+    .btns{
+        display: flex;
+        justify-self: flex-end;
+        padding-right: 5px ;
+        width:fit-content ;
+
+    }
+    .list-body li{
+        display: flex;
+    }
+}
+@media (max-width:891px){
+    .list-body{
+        width:95% ;
+        padding:5px ;
+    }
+    .add-task{
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+    }
+    .add-task input[type = "submit"]{
+        margin-top: 20px;
+        width:20% ;
+    }
+    #taskInput{
+        width:80% ;
+    }
+    .list-head{
+        margin-top:-20px ;
+    }
+    .list-body{
+        height:
+    }
+}
+
+@media (max-width:398px){
+    .add-task input[type = "submit"]{
+        width:60% ;
+    }
+    #taskInput{
+        width:95% ;
+    }
+}
+
